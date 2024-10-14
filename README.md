@@ -5,7 +5,7 @@
 </div>
 
 ## Overview
-
+Automate AWS infrastructure deployment with CloudFormation and AWS CLI.
 
 ---
 ⚠️ **Attention:**
