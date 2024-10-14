@@ -75,6 +75,15 @@ Resources:
       SubnetId: !Ref PublicSubnet
       RouteTableId: !Ref PublicRouteTable
 ```
+
+<div align="center">
+  <img src="screenshot/1.0.PNG" width=""/>
+</div>
+
+<div align="center">
+  <img src="screenshot/1.1.PNG" width=""/>
+</div>
+
 ---
 ## 2. Create the Stack Using AWS CLI
 - Create the CloudFormation stack:
@@ -84,6 +93,12 @@ aws cloudformation create-stack \
   --template-body file://task1.yml \
   --capabilities CAPABILITY_NAMED_IAM  
 ```
+
+
+<div align="center">
+  <img src="screenshot/2.PNG" width=""/>
+</div>
+
 ---
 ## 3. Check Stack Status
 - To check the progress of the stack creation:
@@ -91,15 +106,41 @@ aws cloudformation create-stack \
 aws cloudformation describe-stacks --stack-name LabVPCStack
 ```
 - Look for the **StackStatus** field. When it shows **CREATE_COMPLETE**, the stack creation is finished.
+
+
+<div align="center">
+  <img src="screenshot/3.PNG" width=""/>
+</div>
+
 ---
 ## 4. View Created Resources
 - Once the stack is created, you can list the resources:
 ```bash
 aws cloudformation describe-stack-resources --stack-name LabVPCStack
 ```
+
+
+<div align="center">
+  <img src="screenshot/4.0.PNG" width=""/>
+</div>
+
+
+<div align="center">
+  <img src="screenshot/4.1.PNG" width=""/>
+</div>
+
 ---
 ## 5. Deleting the Stack
 - If you need to delete the stack and remove all associated resources:
 ```bash
 aws cloudformation delete-stack --stack-name LabVPCStack
 ```
+
+<div align="center">
+  <img src="screenshot/5.PNG" width=""/>
+</div>
+
+
+<div align="center">
+  <img src="screenshot/5.1.PNG" width=""/>
+</div>
