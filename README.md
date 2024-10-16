@@ -144,3 +144,9 @@ aws cloudformation delete-stack --stack-name LabVPCStack
 <div align="center">
   <img src="screenshot/5.1.PNG" width=""/>
 </div>
+
+---
+
+## Conclusion
+AWS CloudFormation accelerates the process of creating and managing environments by automating resource provisioning.
+Use ![shell scripts](/scripts) to improve this process.
